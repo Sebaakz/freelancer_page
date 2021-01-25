@@ -1,4 +1,76 @@
-h1
+:root
+{
+ --blanco: #ffffff;
+ --negro : #000000;
+ --primary: #FFC107;
+ --secundary: #0097A7;
+ --gris: #757575;
+}
+.bg-primary
+{
+    background-color: var(--primary);
+}
+.bg-secundary
+{
+    background-color: var(--secundary);
+}
+
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    font-family: 'Krub', sans-serif;
+    font-size: 16px;
+}
+.hero
+{
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.titulo
 {
     text-align: center;
+    font-size: 3.8rem;
+    font-weight: 400;
+    color: var(--primary);
+}
+.titulo span
+{
+    font-size: 2rem;
+}
+
+.container
+{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.primary-nav
+{
+    display: flex;
+    flex-direction: column;
+}
+.primary-nav a
+{
+ display: block;
+ color: var(--blanco);
+ text-decoration: none;
+ padding: 1rem;
+ text-align: center;
+ font-size: 2rem;
+}
+
+.primary-nav a:hover
+{
+    background-color: var(--primary);
+    color: var(--negro);
+}
+@media (min-width: 768px)  {
+    .primary-nav
+    {
+        flex-direction: row ;
+        justify-content: space-between;
+    }
 }
